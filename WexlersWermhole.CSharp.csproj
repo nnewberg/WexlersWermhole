@@ -78,6 +78,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\FirstPersonDrifter.cs" />
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\LockMouse.cs" />
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\Optional\CameraFadeOnStart.cs" />
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\Optional\CameraZoom.cs" />
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\Optional\CheckIfBelowLevel.cs" />
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\Optional\HeadBob.cs" />
+    <Compile Include="Assets\DepthKit\First Person Drifter Controller\Scripts\Utils\CameraFade.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Core\Clip.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Core\ClipPlayer.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Core\ClipRenderer.cs" />
@@ -85,6 +93,7 @@
     <Compile Include="Assets\DepthKit\Scripts\Core\IDKPlayer.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Core\Metadata.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Core\PlayerEvents.cs" />
+    <Compile Include="Assets\DepthKit\Scripts\DemoDriver.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Examples\APIExample.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Players\AVProVideoPlayer.cs" />
     <Compile Include="Assets\DepthKit\Scripts\Players\MPMPPlayer.cs" />
@@ -212,7 +221,7 @@
     <None Include="Assets\DepthKit\Shaders\DepthKit.cginc" />
     <None Include="Assets\DepthKit\Shaders\DepthKit.shader" />
     <None Include="Assets\DepthKitClips\Idle\_meta.txt" />
-    <None Include="Assets\DepthKitClips\OG\_meta.txt" />
+    <None Include="Assets\DepthKitClips\Lox\_meta.txt" />
     <None Include="Assets\DepthKitClips\OG_Normalized\_meta.txt" />
     <None Include="Assets\DepthKitClips\Welcome\_meta.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />

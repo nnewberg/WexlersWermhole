@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
-[RequireComponent(typeof(VideoPlayer))]
 public class PlayVideo : MonoBehaviour {
 
     public VideoClip Clip;
     public string URL;
     public AudioSource AudioSource;
-    private VideoPlayer videoPlayer;
+    public VideoPlayer videoPlayer;
 
     void Awake()
     {
@@ -17,8 +16,10 @@ public class PlayVideo : MonoBehaviour {
         var obj = GetComponent<Valve.VR.InteractionSystem.WermholeObject>();
         obj.onPickUp.AddListener(Play);
         obj.onDetachFromHand.AddListener(Stop);
+        obj.onGazeTrigger.AddListener(Play);
+        obj.onGazeExit.AddListener(Stop);
 
-        videoPlayer = GetComponent<VideoPlayer>();
+        //videoPlayer = GetComponent<VideoPlayer>();
         if (URL.Length > 0) //if there's a URL, use that as the source
         {
             videoPlayer.url = URL;
@@ -41,8 +42,11 @@ public class PlayVideo : MonoBehaviour {
 
     private void Play()
     {
-        videoPlayer.frame = 0L;
-        videoPlayer.Play();
+        if (!videoPlayer.isPlaying)
+        {
+            videoPlayer.frame = 0L;
+            videoPlayer.Play();
+        }
     }
 
     private void Stop()

@@ -136,7 +136,7 @@
     <None Include="Assets\DepthKit\Shaders\DepthKit.cginc" />
     <None Include="Assets\DepthKit\Shaders\DepthKit.shader" />
     <None Include="Assets\DepthKitClips\Idle\_meta.txt" />
-    <None Include="Assets\DepthKitClips\OG\_meta.txt" />
+    <None Include="Assets\DepthKitClips\Lox\_meta.txt" />
     <None Include="Assets\DepthKitClips\OG_Normalized\_meta.txt" />
     <None Include="Assets\DepthKitClips\Welcome\_meta.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
